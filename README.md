@@ -142,21 +142,6 @@ Columns include:
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork  
-2. Create branch  
-3. Submit PR  
-
----
-
-# 🙌 Acknowledgments
-- Earthquake dataset source *(Add link here)*  
-- TensorFlow, Scikit-learn, Pandas, Folium  
-
----
 
 
 
