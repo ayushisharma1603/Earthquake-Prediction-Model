@@ -1,123 +1,208 @@
-# Earthquake Prediction and Risk Analysis
+# 🌍🔮 **EARTHQUAKE PREDICTION & RISK ANALYSIS (1990–2023)**
 
-A machine learning project that predicts earthquake magnitude categories and visualizes earthquake risk zones using historical data from 1990-2023.
+<p align="center">
+  <img src="https://i.ibb.co/1fPGvMt/earthquake-banner.jpg" width="100%" />
+</p>
 
-## Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-Machine%20Learning-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Deep%20Learning-ANN-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Data-1990--2023-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
 
-- **Earthquake Risk Map**: Interactive heatmap visualization of significant earthquakes (magnitude ≥ 5.0)
-- **Magnitude Prediction Model**: Deep learning model (ANN) that classifies earthquakes into three categories:
-  - Low (magnitude 0-4.0)
-  - Moderate (magnitude 4.0-6.0)
-  - High (magnitude 6.0-10.0)
-- **Model Evaluation**: Comprehensive evaluation with confusion matrix and classification reports
+---
 
-## Project Structure
+# 🌟 **Overview**
+
+This project uses **historical earthquake data (1990–2023)** to:
+
+🔸 Predict earthquake magnitude categories using a **Deep Learning ANN**  
+🔸 Visualize global earthquake hotspots using an **interactive Folium heatmap**  
+🔸 Analyze seismic patterns and risk zones  
+
+A perfect mix of **Machine Learning + Data Visualization + Real-World Geoscience** 🌋📊
+
+---
+
+# 🖼️ **Custom Project Banner**
+
+<p align="center">
+  <img src="https://i.ibb.co/9ZgTH4P/quake-gif.gif" width="650">
+</p>
+
+---
+
+# 🚀 **Features**
+
+### 🗺️ **🌐 Interactive Earthquake Risk Map**
+- Folium heatmap with earthquake density  
+- Top 100 significant events  
+- Clickable markers with metadata  
+- Auto-generated HTML (`earthquake_risk_map.html`)
+
+### 🤖 **🔮 Magnitude Prediction Model (ANN)**
+- Multi-class classification:  
+  - **Low (0–4)**  
+  - **Moderate (4–6)**  
+  - **High (6–10)**  
+- Deep learning network with dropout regularization  
+- Trained over 100 epochs  
+- Uses significance, depth, tsunami, latitude, longitude
+
+### 📊 **📈 Evaluation & Analytics**
+- Confusion Matrix  
+- Classification Report  
+- Accuracy vs Loss curves  
+- Example real-case predictions  
+
+---
+
+# 🔧 **Tech Stack**
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,sklearn,numpy,pandas,matplotlib,seaborn" />
+</p>
+
+---
+
+# 📁 **Project Structure**
 
 ```
-├── code-1.py                    # Earthquake risk map visualization
-├── final code.py                # ANN model for magnitude prediction
-├── code2.py                     # Additional analysis
-├── earthquake_risk_map.html     # Generated interactive map
-├── Confusion Matrix.png         # Model evaluation visualization
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
+📦 Earthquake Prediction Project
+├── code-1.py                    # Earthquake risk map visualization  
+├── final code.py                # ANN model for magnitude prediction  
+├── code2.py                     # Additional analysis  
+├── earthquake_risk_map.html     # Generated interactive map  
+├── Confusion Matrix.png         # Confusion matrix  
+├── requirements.txt             # Project dependencies  
+└── README.md                    # Documentation  
 ```
 
-## Requirements
+---
 
-- Python 3.8+
-- TensorFlow/Keras
-- Pandas
-- NumPy
-- Scikit-learn
-- Folium
-- Matplotlib
-- Seaborn
+# 🧠 **Model Architecture**
 
-## Installation
+| Layer | Details |
+|-------|---------|
+| Input Layer | 5 numerical features |
+| Dense Layer 1 | 64 neurons, ReLU, Dropout 0.3 |
+| Dense Layer 2 | 32 neurons, ReLU, Dropout 0.3 |
+| Output Layer | 3 neurons, Softmax |
+| Optimizer | Adam |
+| Loss | Categorical Crossentropy |
+| Epochs | 100 |
+| Batch Size | 32 |
 
-1. Clone this repository:
-```bash
-git clone <your-repository-url>
-cd earthquake-prediction
-```
+---
 
-2. Install required packages:
+# 🧪 **How to Run the Project**
+
+## ▶️ **1. Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Download the dataset:
-   - Dataset: Earthquakes-1990-2023.csv
-   - Update the file path in the Python scripts to match your local path
-
-## Usage
-
-### Generate Earthquake Risk Map
+## 🌍 **2. Generate Earthquake Risk Map**
 ```bash
 python code-1.py
 ```
-This will generate an interactive HTML map showing the top 100 most significant earthquakes.
+➡ Outputs: `earthquake_risk_map.html`
 
-### Train and Evaluate the Prediction Model
+## 🤖 **3. Train & Evaluate ANN Model**
 ```bash
 python "final code.py"
 ```
-This will:
-- Train an Artificial Neural Network on the earthquake data
-- Display model accuracy and loss metrics
-- Generate a confusion matrix
-- Provide classification report
-- Make example predictions
+➡ Generates metrics, confusion matrix, and predictions
 
-## Model Architecture
+---
 
-The ANN model consists of:
-- Input layer (5 features: longitude, latitude, depth, tsunami, significance)
-- Hidden layer 1: 64 neurons with ReLU activation + Dropout (0.3)
-- Hidden layer 2: 32 neurons with ReLU activation + Dropout (0.3)
-- Output layer: 3 neurons with Softmax activation (multi-class classification)
+# 📥 **Dataset Details**
 
-**Optimizer**: Adam  
-**Loss Function**: Categorical Crossentropy  
-**Training**: 100 epochs with batch size of 32
+**Dataset:** `Earthquakes-1990-2023.csv`  
+Contains:
 
-## Dataset
+- 🌎 Longitude  
+- 🌍 Latitude  
+- 📏 Depth  
+- 🌊 Tsunami Flag  
+- ⚡ Significance Score  
+- 📅 Date  
+- 🏙️ Location  
+- 🎯 Magnitude (Target Variable)
 
-The model uses historical earthquake data (1990-2023) with the following features:
-- Longitude
-- Latitude
-- Depth
-- Tsunami indicator
-- Significance score
-- Magnitude (target variable)
-- Location/Place
-- Date
+> ⚠ Update dataset path in code as needed.
 
-## Results
+---
 
-The model achieves classification of earthquake magnitudes into Low, Moderate, and High categories with detailed performance metrics available in the confusion matrix and classification report.
+# 🌋 **Visualization Preview**
 
-## Visualization
+### 🔥 Heatmap Example  
+<p align="center">
+  <img src="https://i.ibb.co/mC3qc5D/heatmap-demo.gif" width="500">
+</p>
 
-The earthquake risk map includes:
-- Heatmap overlay showing earthquake concentration
-- Interactive markers with earthquake details (location, date, magnitude)
-- Global view with zoom functionality
+### 📊 Confusion Matrix  
+<p align="center">
+  <img src="Confusion Matrix.png" width="500">
+</p>
 
-## Contributing
+---
 
-Feel free to fork this repository and submit pull requests for any improvements.
+# 📈 **Results Summary**
 
-## License
+✔ Successfully predicts magnitude class  
+✔ Higher accuracy for **Low** and **Moderate** categories  
+✔ Heatmap reveals:  
+- Pacific Ring of Fire  
+- Japan, Indonesia  
+- California  
+- Chile & Peru  
+- Himalayan belt  
 
-This project is open source and available under the MIT License.
+---
 
-## Acknowledgments
+# 🏆 **Why This Project is Unique?**
 
-- Earthquake data source: [Specify your data source]
-- Built with TensorFlow, Scikit-learn, and Folium
+✨ Combines **prediction + visualization + analytics**  
+✨ Uses **deep learning**, not classical ML  
+✨ Easy-to-understand structure  
+✨ Real-world dataset  
+✨ Practical for research, geoscience, and ML case studies  
 
-## Contact
+---
 
-For questions or suggestions, please open an issue in this repository.
+# 🤝 **Contributing**
+
+Want to improve the project?  
+Feel free to:
+
+✔ Fork the repo  
+✔ Add features  
+✔ Submit a pull request  
+
+Contributions are **always welcome** 💙
+
+---
+
+# 📄 **License**
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 🙌 **Acknowledgments**
+
+- Earthquake data source: *(Add your dataset source link)*  
+- TensorFlow, Scikit-learn, Folium for powering this project  
+- Inspiration from global seismic research  
+
+---
+
+# 📬 **Contact**
+
+For queries or suggestions, open an **Issue** in this repository.
+
+---
+
