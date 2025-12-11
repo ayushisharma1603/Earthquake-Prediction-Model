@@ -1,7 +1,7 @@
 # 🌍🔮 **EARTHQUAKE PREDICTION & RISK ANALYSIS (1990–2023)**
 
 <p align="center">
-  <img src="https://i.ibb.co/1fPGvMt/earthquake-banner.jpg" width="100%" />
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/earthquake/earthquake.png" width="120" />
 </p>
 
 <p align="center">
@@ -14,52 +14,41 @@
 
 ---
 
-# 🌟 **Overview**
+# 🌟 Overview
 
 This project uses **historical earthquake data (1990–2023)** to:
 
-🔸 Predict earthquake magnitude categories using a **Deep Learning ANN**  
-🔸 Visualize global earthquake hotspots using an **interactive Folium heatmap**  
-🔸 Analyze seismic patterns and risk zones  
+- Predict earthquake magnitude categories using a **Deep Learning ANN**
+- Visualize global earthquake hotspots using an **interactive Folium heatmap**
+- Analyze seismic patterns and risk zones  
 
-A perfect mix of **Machine Learning + Data Visualization + Real-World Geoscience** 🌋📊
-
----
-
-# 🖼️ **Custom Project Banner**
-
-<p align="center">
-  <img src="https://i.ibb.co/9ZgTH4P/quake-gif.gif" width="650">
-</p>
+A powerful blend of **Machine Learning + Geo-Visualization** 🌋📊
 
 ---
 
-# 🚀 **Features**
+# 🚀 Features
 
-### 🗺️ **🌐 Interactive Earthquake Risk Map**
-- Folium heatmap with earthquake density  
-- Top 100 significant events  
-- Clickable markers with metadata  
-- Auto-generated HTML (`earthquake_risk_map.html`)
+## 🗺️ Interactive Earthquake Risk Map
+- Folium heatmap showing global earthquake density  
+- Top 100 strongest earthquakes  
+- Clickable markers with details  
+- Output: `earthquake_risk_map.html`
 
-### 🤖 **🔮 Magnitude Prediction Model (ANN)**
-- Multi-class classification:  
-  - **Low (0–4)**  
-  - **Moderate (4–6)**  
-  - **High (6–10)**  
-- Deep learning network with dropout regularization  
-- Trained over 100 epochs  
-- Uses significance, depth, tsunami, latitude, longitude
+## 🤖 ANN Model for Magnitude Prediction
+- Predicts classes: **Low**, **Moderate**, **High**
+- Input features: significance, depth, tsunami flag, latitude, longitude
+- Trained for 100 epochs  
+- Dropout used to reduce overfitting
 
-### 📊 **📈 Evaluation & Analytics**
+## 📊 Evaluation Metrics
 - Confusion Matrix  
 - Classification Report  
-- Accuracy vs Loss curves  
-- Example real-case predictions  
+- Accuracy & Loss curves  
+- Example predictions  
 
 ---
 
-# 🔧 **Tech Stack**
+# 🔧 Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,tensorflow,sklearn,numpy,pandas,matplotlib,seaborn" />
@@ -67,7 +56,7 @@ A perfect mix of **Machine Learning + Data Visualization + Real-World Geoscience
 
 ---
 
-# 📁 **Project Structure**
+# 📁 Project Structure
 
 ```
 📦 Earthquake Prediction Project
@@ -76,20 +65,20 @@ A perfect mix of **Machine Learning + Data Visualization + Real-World Geoscience
 ├── code2.py                     # Additional analysis  
 ├── earthquake_risk_map.html     # Generated interactive map  
 ├── Confusion Matrix.png         # Confusion matrix  
-├── requirements.txt             # Project dependencies  
+├── requirements.txt             # Dependencies  
 └── README.md                    # Documentation  
 ```
 
 ---
 
-# 🧠 **Model Architecture**
+# 🧠 Model Architecture
 
 | Layer | Details |
 |-------|---------|
-| Input Layer | 5 numerical features |
-| Dense Layer 1 | 64 neurons, ReLU, Dropout 0.3 |
-| Dense Layer 2 | 32 neurons, ReLU, Dropout 0.3 |
-| Output Layer | 3 neurons, Softmax |
+| Input Layer | 5 features |
+| Dense Layer 1 | 64 neurons — ReLU — Dropout(0.3) |
+| Dense Layer 2 | 32 neurons — ReLU — Dropout(0.3) |
+| Output Layer | 3 neurons — Softmax |
 | Optimizer | Adam |
 | Loss | Categorical Crossentropy |
 | Epochs | 100 |
@@ -97,112 +86,75 @@ A perfect mix of **Machine Learning + Data Visualization + Real-World Geoscience
 
 ---
 
-# 🧪 **How to Run the Project**
+# 📥 Dataset Information
 
-## ▶️ **1. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
+Dataset: **Earthquakes-1990-2023.csv**
 
-## 🌍 **2. Generate Earthquake Risk Map**
-```bash
-python code-1.py
-```
-➡ Outputs: `earthquake_risk_map.html`
+Columns include:
 
-## 🤖 **3. Train & Evaluate ANN Model**
-```bash
-python "final code.py"
-```
-➡ Generates metrics, confusion matrix, and predictions
+- Longitude  
+- Latitude  
+- Depth  
+- Tsunami Flag  
+- Significance  
+- Location  
+- Date  
+- Magnitude (Target)
+
+⚠ Make sure to update dataset path inside the scripts.
 
 ---
 
-# 📥 **Dataset Details**
+# 🌋 Visualization Preview
 
-**Dataset:** `Earthquakes-1990-2023.csv`  
-Contains:
-
-- 🌎 Longitude  
-- 🌍 Latitude  
-- 📏 Depth  
-- 🌊 Tsunami Flag  
-- ⚡ Significance Score  
-- 📅 Date  
-- 🏙️ Location  
-- 🎯 Magnitude (Target Variable)
-
-> ⚠ Update dataset path in code as needed.
-
----
-
-# 🌋 **Visualization Preview**
-
-### 🔥 Heatmap Example  
+### Heatmap (Example)
 <p align="center">
-  <img src="https://i.ibb.co/mC3qc5D/heatmap-demo.gif" width="500">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/heatmap/heatmap.png" width="450">
 </p>
 
-### 📊 Confusion Matrix  
+### Confusion Matrix (Your Output)
 <p align="center">
-  <img src="Confusion Matrix.png" width="500">
+  <img src="Confusion Matrix.png" width="450">
 </p>
 
 ---
 
-# 📈 **Results Summary**
+# 📈 Results Summary
 
-✔ Successfully predicts magnitude class  
-✔ Higher accuracy for **Low** and **Moderate** categories  
-✔ Heatmap reveals:  
-- Pacific Ring of Fire  
-- Japan, Indonesia  
-- California  
-- Chile & Peru  
-- Himalayan belt  
+- ANN model predicts earthquake categories effectively  
+- High precision for **Low** & **Moderate** categories  
+- Heatmap reveals patterns in:  
+  - Pacific Ring of Fire  
+  - Japan  
+  - Indonesia  
+  - Chile & Peru  
+  - Himalayan Belt  
 
 ---
 
-# 🏆 **Why This Project is Unique?**
+# 🏆 Why This Project Stands Out
 
-✨ Combines **prediction + visualization + analytics**  
-✨ Uses **deep learning**, not classical ML  
-✨ Easy-to-understand structure  
+✨ Combines **ML, visualization, and geoscience**  
+✨ Easy-to-run scripts  
 ✨ Real-world dataset  
-✨ Practical for research, geoscience, and ML case studies  
+✨ Great for portfolios, ML case studies, and academic work  
 
 ---
 
-# 🤝 **Contributing**
+# 🤝 Contributing
 
-Want to improve the project?  
-Feel free to:
+Contributions are welcome!
 
-✔ Fork the repo  
-✔ Add features  
-✔ Submit a pull request  
-
-Contributions are **always welcome** 💙
+1. Fork  
+2. Create branch  
+3. Submit PR  
 
 ---
 
-# 📄 **License**
-
-This project is licensed under the **MIT License**.
-
----
-
-# 🙌 **Acknowledgments**
-
-- Earthquake data source: *(Add your dataset source link)*  
-- TensorFlow, Scikit-learn, Folium for powering this project  
-- Inspiration from global seismic research  
+# 🙌 Acknowledgments
+- Earthquake dataset source *(Add link here)*  
+- TensorFlow, Scikit-learn, Pandas, Folium  
 
 ---
 
-# 📬 **Contact**
-
-For queries or suggestions, open an **Issue** in this repository.
-
----
 
