@@ -1,4 +1,7 @@
-# 🌍🔮 **EARTHQUAKE PREDICTION & RISK ANALYSIS (1990–2023)**
+
+<h1 align="center" style="color:#00E1FF; text-shadow: 0 0 20px #00E1FF;">
+  🌍💥 EARTHQUAKE PREDICTION MODEL 💥🌍
+</h1>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/github/explore/main/topics/earthquake/earthquake.png" width="120" />
