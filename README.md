@@ -84,22 +84,7 @@
       </g>
     </g>
 
-    <g id="front">
-      <text x="24" y="110" font-family="Poppins, Inter, Arial, sans-serif" font-size="78" font-weight="900"
-            fill="url(#g1)" stroke="#07102b" stroke-width="0.6" style="letter-spacing:2px;">
-        EARTHQUAKE PREDICTION MODEL
-      </text>
-
-      <text x="24" y="110" font-family="Poppins, Inter, Arial, sans-serif" font-size="78" font-weight="900"
-            fill="url(#g2)" style="letter-spacing:2px;">
-        EARTHQUAKE PREDICTION MODEL
-      </text>
-    </g>
-
-    <text x="36" y="160" font-family="Inter, Arial, sans-serif" font-size="18" fill="#a7c8ff"
-          font-weight="600">Deep Learning • Heatmaps • Risk Analysis (1990–2023)</text>
-
-    <path d="M24 178 C 220 195, 480 150, 900 190" fill="none" stroke="#00b7ff33" stroke-width="6" stroke-linecap="round" />
+   
   </g>
 
   <ellipse cx="600" cy="140" rx="470" ry="90" fill="#61a7ff11" />
