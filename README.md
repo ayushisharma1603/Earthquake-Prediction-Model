@@ -2,15 +2,15 @@
 # 🌍🔮 **EARTHQUAKE PREDICTION & RISK ANALYSIS (1990–2023)**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/earthquake/earthquake.png" width="120" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=wave&color=0:6a11cb,100:2575fc&height=180&section=header&text=Earthquake%20Prediction%20Model&fontSize=35&fontColor=ffffff" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-Machine%20Learning-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Deep%20Learning-ANN-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Data-1990--2023-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-Earthquake%20Prediction-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Machine%20Learning-ANN%20%7C%20Deep%20Learning-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Model-Artificial%20Neural%20Network-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Earthquake%20Data-1990–2023-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge">
 </p>
 
 ---
