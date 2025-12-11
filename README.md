@@ -1,7 +1,12 @@
+<!-- ====================== 3D TITLE BANNER ====================== -->
 
-<h1 align="center" style="color:#00E1FF; text-shadow: 0 0 20px #00E1FF;">
-  🌍💥 EARTHQUAKE PREDICTION MODEL 💥🌍
-</h1>
+<p align="center">
+  <img src="assets/banner.svg" alt="Earthquake Prediction Model Banner" />
+</p>
+
+<!-- ============================================================= -->
+
+# 🌍🔮 **EARTHQUAKE PREDICTION & RISK ANALYSIS (1990–2023)**
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/github/explore/main/topics/earthquake/earthquake.png" width="120" />
@@ -159,5 +164,6 @@ Contributions are welcome!
 - TensorFlow, Scikit-learn, Pandas, Folium  
 
 ---
+
 
 
